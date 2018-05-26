@@ -1,4 +1,7 @@
+
 ## Social Login with reactjs
+
 #Usage
-npm install 
-npm start 
+`npm install`
+
+`npm start` 
