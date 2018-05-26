@@ -36,11 +36,12 @@ class App extends Component {
       });
     };
     
-    const _this = this
-    window.onload = function () {
-      _this.checkLoginState()
-    }
-    
+    // loaded event 
+    window.addEventListener('load', this.handleLoad.bind(this));    
+  }
+
+  handleLoad() {
+    this.checkLoginState()
   }
 
   facebookLogin = () => {
@@ -88,7 +89,6 @@ class App extends Component {
       })
     });
   }
-
 
   render() {
     const { picture: { data } } = this.state
