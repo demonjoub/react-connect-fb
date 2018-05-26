@@ -29,7 +29,7 @@ class App extends Component {
 
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: config.facebook,
+        appId: config.facebook, // facebook app id https://developers.facebook.com/ -> app -> create app
         cookie: true,  // enable cookies to allow the server to access the session
         xfbml: true,  // parse social plugins on this page
         version: 'v3.0' // use version 3.0
